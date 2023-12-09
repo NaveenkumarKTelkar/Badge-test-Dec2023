@@ -1,0 +1,29 @@
+form>div>input{
+    /* width: 50px; */
+    /* appearance: none; */
+    border: 5px solid red;
+}
+h1{
+    background-color: rgb(17, 0, 255);
+    color: white;
+}
+
+form{
+    /* background-color: rgb(178, 112, 240); */
+    margin: 30px 300px 30px;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+form>div>input::before{
+    
+    transform:skewX(0deg);
+    transition: ease-in-out 0.5s;
+}
+form>div>input::after{
+    transform: translateX(45deg);
+    transition: ease-out;
+}
+.checkbox{
+    
+}

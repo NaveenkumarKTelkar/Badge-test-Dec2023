@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css modal</title>
+    <style>
+        dialog{
+            background-color: rgb(158, 41, 173);
+            color: white;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <dialog id="dialogID">
+        <button type="button" id="closeButton">&times;</button>
+        <h1>Loream</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, fuga in. Aspernatur tempore, non fuga corrupti blanditiis nihil fugiat numquam laboriosam adipisci dolor, sapiente ullam nobis error quibusdam illo minus!</p>
+    </dialog>
+
+    <button type="button" id="openDialog">Open Dialog tag</button>
+
+    <script>
+        document.getElementById('openDialog').onclick = function(){
+            document.getElementById('dialogID').show();
+        };
+
+        document.getElementById('closeButton').onclick = function(){
+            document.getElementById('dialogID').close();
+        };
+    </script>
+</body>
+</html>
